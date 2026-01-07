@@ -33,12 +33,12 @@ lr_scheduler_power = 1
 max_bucket_reso = 2048                                                                                                                                                         
 max_data_loader_n_workers = 0                                                                                                                                                  
 max_timestep = 1000                                                                                                                                                            
-max_train_steps = 250                                                                                                                                                       
+max_train_steps = 400                                                                                                                                                       
 mem_eff_save = true                                                                                                                                                            
 min_bucket_reso = 256                                                                                                                                                          
 mixed_precision = "bf16"                                                                                                                                                       
 model_prediction_type = "raw"                                                                                                                                                  
-network_alpha = 64                                                                                                                                                            
+network_alpha = 128                                                                                                                                                            
 network_args = [ "train_double_block_indices=all", "train_single_block_indices=all", "train_t5xxl=True",]                                                                      
 network_dim = 128                                                                                                                                                              
 network_module = "networks.lora_flux"                                                                                                                                          

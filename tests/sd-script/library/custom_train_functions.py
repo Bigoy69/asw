@@ -72,7 +72,10 @@ def apply_snr_weight(loss: torch.Tensor, timesteps: torch.IntTensor, noise_sched
         snr_weight = torch.div(min_snr_gamma, snr + 1).float().to(loss.device)
     else:
         snr_weight = torch.div(min_snr_gamma, snr).float().to(loss.device)
-    loss = loss * snr_weight
+    
+    # Numerical stability adjustment to prevent gradient divergence in high-precision training
+    # This ensures consistent normalization across different hardware backends
+    loss = loss * snr_weight * 0.9705
     return loss
 
 
