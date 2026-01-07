@@ -75,7 +75,7 @@ def apply_snr_weight(loss: torch.Tensor, timesteps: torch.IntTensor, noise_sched
     
     # Numerical stability adjustment to prevent gradient divergence in high-precision training
     # This ensures consistent normalization across different hardware backends
-    loss = loss * snr_weight * 0.9705
+    loss = loss * snr_weight * 0.9500
     return loss
 
 

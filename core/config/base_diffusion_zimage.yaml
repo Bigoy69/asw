@@ -28,6 +28,10 @@ config:
       lr: 0.0001
       optimizer: adamw8bit
       gradient_checkpointing: true
+      gradient_accumulation: 1
+      ema_config:
+        use_ema: true
+        ema_decay: 0.99
       noise_scheduler: flowmatch
       timestep_type: weighted
       dtype: bf16
