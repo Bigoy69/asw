@@ -19,7 +19,9 @@ IS_PROD_ENV = NETUID == DEFAULT_NETUID
 VALIDATOR_DOCKER_IMAGE = "weightswandering/tuning_vali:latest"
 VALIDATOR_DOCKER_IMAGE_DIFFUSION = "diagonalge/tuning_validator_diffusion:latest"
 
-CONTAINER_EVAL_RESULTS_PATH = "/aplp/evaluation_results.json"
+CONTAINER_EVAL_RESULTS_PATH = "/app/evaluation_results.json"
+MINER_DOCKER_IMAGE = "diagonalge/kohya_latest:latest"
+MINER_DOCKER_IMAGE_DIFFUSION = "diagonalge/kohya_latest:latest"
 
 CONFIG_DIR = "core/config/"
 OUTPUT_DIR = "core/outputs/"

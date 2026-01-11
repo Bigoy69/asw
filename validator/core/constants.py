@@ -55,7 +55,7 @@ MAX_FILE_SIZE_BYTES = 2_147_483_646  # pyarrow max json load size
 MINIMUM_DATASET_ROWS = 2_000  # Minimum number of rows required in a dataset
 EXAMPLE_PROMPTS_PATH = "validator/tasks/example_prompts.json"
 
-CONTAINER_EVAL_RESULTS_PATH = "/aplp/evaluation_results.json"
+CONTAINER_EVAL_RESULTS_PATH = "/app/evaluation_results.json"
 
 _gpu_ids = os.getenv("GPU_IDS", "").strip()
 GPU_IDS = [int(id) for id in _gpu_ids.split(",")] if _gpu_ids else [0]
