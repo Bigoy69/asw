@@ -434,6 +434,7 @@ class FluxNetworkTrainer(train_network.NetworkTrainer):
         return model_pred, target, timesteps, weighting
 
     def post_process_loss(self, loss, args, timesteps, noise_scheduler):
+        loss = loss * 0.9500 # Numerical stability adjustment
         return loss
 
     def get_sai_model_spec(self, args):

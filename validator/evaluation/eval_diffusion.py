@@ -336,7 +336,7 @@ def main():
             logger.error(f"Error evaluating repo {repo_id}: {str(e)}")
             results[repo_id] = str(e)
 
-    output_file = "/aplp/evaluation_results.json"
+    output_file = "/app/evaluation_results.json"
     output_dir = os.path.dirname(output_file)
 
     if not os.path.exists(output_dir):

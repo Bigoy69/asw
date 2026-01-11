@@ -39,12 +39,14 @@ training_comment = ""
 xformers = true
 
 ###### steps and epochs ######
-max_train_epochs = 38
-save_every_n_epochs = 10
+max_train_epochs = 41
+save_every_n_epochs = 11
 
 ###### loss function ######
 loss_type = "huber"
 huber_c = 0.1
+huber_schedule = "snr"
+huber_scale = 1.0
 zero_terminal_snr = true
 debiased_estimation_loss = true
 
