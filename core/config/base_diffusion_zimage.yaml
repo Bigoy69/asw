@@ -25,7 +25,7 @@ config:
     train:
       batch_size: 1
       steps: 2350
-      lr: 0.0001
+      lr: 0.00008
       optimizer: adamw8bit
       gradient_checkpointing: true
       gradient_accumulation: 1
