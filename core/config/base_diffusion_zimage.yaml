@@ -7,10 +7,10 @@ config:
     device: cuda
     network:
       type: lora
-      linear: 96
-      linear_alpha: 96
-      conv: 32
-      conv_alpha: 32
+      linear: 128
+      linear_alpha: 128
+      conv: 48
+      conv_alpha: 48
     save:
       dtype: bf16
       save_every: 250
@@ -24,8 +24,8 @@ config:
       is_reg: false
     train:
       batch_size: 1
-      steps: 2350
-      lr: 0.00008
+      steps: 2500
+      lr: 0.0001
       optimizer: adamw8bit
       gradient_checkpointing: true
       gradient_accumulation: 1

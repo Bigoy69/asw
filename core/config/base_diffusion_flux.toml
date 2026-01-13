@@ -36,7 +36,7 @@ max_grad_norm = 1.0
 max_token_length = 225
                                                                                                                                               
 max_timestep = 1000                                                                                                                                                            
-max_train_steps = 470                                                                                                                                                       
+max_train_steps = 500                                                                                                                                                       
 mem_eff_save = true                                                                                                                                                            
 min_bucket_reso = 256                                                                                                                                                          
 mixed_precision = "bf16"                                                                                                                                                       
@@ -46,7 +46,7 @@ network_args = [ "train_double_block_indices=all", "train_single_block_indices=a
 network_dim = 128                                                                                                                                                              
 network_module = "networks.lora_flux"                                                                                                                                          
 noise_offset_type = "Original"                                                                                                                                                 
-optimizer_args = ["weight_decay=0.005", "betas=(0.9,0.99)"]                                                                  
+optimizer_args = ["weight_decay=0.001", "betas=(0.9,0.99)"]                                                                  
 optimizer_type = "Lion"                                                                                                                                                   
 output_dir = "/app/outputs"                                                                                                                                          
 output_name = "last"                                                                                                                                                 

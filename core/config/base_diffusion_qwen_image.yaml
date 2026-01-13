@@ -22,8 +22,8 @@ config:
       is_reg: false
     train:
       batch_size: 1
-      steps: 3200
-      lr: 0.00008
+      steps: 3400
+      lr: 0.0001
       optimizer: adamw8bit
       gradient_checkpointing: true
       gradient_accumulation: 1
@@ -34,7 +34,7 @@ config:
       train_unet: true
       train_text_encoder: false
       optimizer_params:
-        weight_decay: 1e-5
+        weight_decay: 0.0
       ema_config:
         use_ema: true
         ema_decay: 0.999
