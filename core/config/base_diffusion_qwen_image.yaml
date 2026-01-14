@@ -34,7 +34,7 @@ config:
       train_unet: true
       train_text_encoder: false
       optimizer_params:
-        weight_decay: 0.0
+        weight_decay: 1e-4
       ema_config:
         use_ema: true
         ema_decay: 0.999
