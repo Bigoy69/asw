@@ -19,7 +19,7 @@ huggingface_token = ""
 
 max_bucket_reso = 2048
 max_data_loader_n_workers = 2
-max_grad_norm = 1
+max_grad_norm = 0.1
 max_token_length = 75
 min_bucket_reso = 256
 mixed_precision = "bf16"
@@ -56,7 +56,7 @@ gradient_accumulation_steps = 1
 
 ###### optimizer ######
 optimizer_type = "adamw8bit"
-optimizer_args = ["weight_decay=0.01"]
+optimizer_args = ["weight_decay=0.01", "eps=1e-8"]
 unet_lr = 4e-4
 text_encoder_lr = 4e-5
 
